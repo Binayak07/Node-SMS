@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Send SMS Using Node</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Send SMS</h2>
+    <input type ="tel" name = "number" id ="number" placeholder="Enter Contact Number" required=true>
+    <input type ="text" name = "msg" id ="msg" placeholder="Enter Message" required=true>
+    <input type ="button" value="Send" id ="button" class="button button-primary">
+    <p class="response"></p>
+  <p><b>Do add country code before sending the message, Messages could be sent only to the whitelisted or verified numbers, visit <a href='https://www.nexmo.com'>Nexmo</a> for details</p>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
